@@ -83,6 +83,37 @@ class Customer {
 }
 ```
 
+### Try this
+```dart
+enum Gender{MALE,FEMALE}
+
+class Employee {
+  String name;
+  int? age;
+  Gender? gender;
+
+
+  Employee({
+    required this.name, 
+    this.age,
+    this.gender
+    
+  });
+  
+}
+
+void main() {
+  
+  Employee details = Employee(name: 'JEROME',age: 30,gender: Gender.MALE);
+  
+  print(
+    'Name  : ${details.name}\nAge   : ${details.age}\nGender: ${details.gender}'
+  );
+
+}
+
+```
+
 ### Encapsulation
 
 Encapsulation is the bundling of data (attributes) and methods that operate on the data within a class. Dart supports encapsulation through public, private, and protected keywords for controlling access to class members.
